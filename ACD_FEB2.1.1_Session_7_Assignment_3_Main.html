@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Anonymous Function</title>
+		<script>
+			var anonfunction=function(otherfunction,text1)
+			{
+				otherfunction(text1);
+			};
+
+			setTimeout(anonfunction(function(text)
+			{
+				console.log(text);
+			},"ravi"),5000);
+		</script>
+	</head>
+	<body>
+		<h1>Please see output shown in browser Console.</h1>
+	</body>
+</html>
